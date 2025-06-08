@@ -1,0 +1,176 @@
+/* Process.css - Eco-Friendly Theme with Motion Effects */
+
+.process-container {
+  text-align: center;
+  padding: 20px 0px;
+  padding-bottom: 40px;
+  background-color: #f1ede0;
+  color: #2c5f2d;
+  margin: -10px auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.process-container h1 {
+  font-size: 32px;
+  color: #285918;
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* Slide-in effect */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.process-container p {
+  font-size: 18px;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+
+/* Process Steps Layout */
+.process-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Process Card Styling */
+.process-card {
+  background: #e0d5b3;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInCard 0.5s ease-in-out forwards;
+}
+
+.process-card img,
+.process-card video {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInImage 0.5s ease-in-out forwards 0.5s;
+}
+
+/* Staggered animation for process cards */
+.process-card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.process-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.process-card:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+/* Card fade-in effect */
+@keyframes fadeInCard {
+  from {
+      opacity: 0;
+      transform: translateY(15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Hover Effect */
+.process-card:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
+}
+
+/* Process Card Image */
+.process-card img {
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInImage 0.5s ease-in-out forwards 0.5s;
+}
+
+/* Image fade-in effect */
+@keyframes fadeInImage {
+  from {
+      opacity: 0;
+      transform: scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.process-card h2 {
+  font-size: 20px;
+  color: #2c5f2d;
+  margin-top: 10px;
+}
+
+.process-card p {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+.process-videp-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+} 
+.process-video {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .process-container {
+      padding: 20px;
+  }
+
+  .process-list {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .process-card {
+      width: 90%;
+  }
+}

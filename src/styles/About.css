@@ -1,0 +1,204 @@
+/* About.css - Eco-Friendly Theme */
+
+.about-container {
+  font-family: "Arial", sans-serif;
+  color: #3b7d22;
+  background-color: #f1ede0;
+  text-align: center;
+  padding: 20px;
+  margin: -10px auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.about-header h1 {
+  font-size: 32px;
+  color: #285918;
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* Slide-in effect */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #5a5a5a;
+  margin-top: 5px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+/* Image motion effects */
+.about-image {
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: -5px 1px 10px -3px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInImage 0.5s ease-in-out forwards;
+  background-color: #f1ede0;
+}
+
+@keyframes fadeInImage {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* About Text Section */
+.about-text {
+  max-width: 50%;
+  text-align: left;
+  padding: 20px;
+  background-color: #a37e46;
+  border-radius: 10px;
+  box-shadow: 10px 4px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInText 0.5s ease-in-out forwards 0.8s;
+}
+
+/* Smooth text fade-in */
+@keyframes fadeInText {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Hover effect for interactive motion */
+.about-text:hover {
+  transform: scale(1.03);
+  box-shadow: 15px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about-text h2 {
+  color: #ffffff;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: justify;
+}
+
+/* List items */
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  color: black;
+  list-style-type: disc; /* Enables bullet points */
+  padding-left: 5px; /* Adds some space for bullets */
+  list-style-type:symbols('•'); /* Custom bullet points */  
+  color: #154d01;
+}
+
+.about-text ul li {
+  font-size: 16px;
+  background: #d4c6a1;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 20px;
+  opacity: 0;
+  transform: translateY(15px);
+  animation: fadeInList 0.8s ease-in-out forwards 1s;
+  
+}
+
+/* List item animation */
+@keyframes fadeInList {
+  from {
+      opacity: 0;
+      transform: translateY(15px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Footer section */
+.vision {
+  background: #e0d5b3;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInFooter 0.5s ease-in-out forwards 0.5s;
+}
+
+/* Footer fade-in */
+@keyframes fadeInFooter {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .about-container {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about-text {
+      max-width: 90%;
+  }
+
+  .about-img {
+      width: 80%;
+      margin-top: 20px;
+  }
+}

@@ -1,0 +1,120 @@
+/* Products.css - Eco-Friendly Theme with Motion Effects */
+
+.products-container {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f1ede0;
+  color: #2c5f2d;
+  margin-top: -10px;
+  padding-bottom: 40px;
+  
+  opacity: 1;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.products-container h1 {
+  font-size: 32px;
+  color: #285918;
+  animation: slideIn 0.5s ease-in-out forwards;
+}
+
+
+.products-container p {
+  font-size: 18px;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 0 10px; /* Ensure padding to avoid card sticking to edges */
+}
+
+.product-card {
+  background: #e0d5b3;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 250px; /* Fixed width for larger screens */
+  }
+
+/* Hover effect */
+.product-card:hover {
+  transform: scale(1.05); /* Slightly scaled hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  z-index: 10;
+  position: relative;
+}
+
+
+
+.product-card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInImage 0.5s ease-in-out forwards 0.5s;
+}
+
+
+
+.product-card h2 {
+  font-size: 20px;
+  color: #2c5f2d;
+  margin-top: 10px;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .products-container {
+    padding: 20px;
+  }
+
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Reduced gap between cards */
+  }
+
+  .product-card {
+    width: 90%; /* Take up most of the screen width */
+    max-width: 300px; /* Prevent cards from growing too large */
+    transform: none; /* Prevent hover scaling on mobile */
+  }
+
+  /* Remove hover effect on mobile */
+  .product-card:hover {
+    transform: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  }
+
+  /* Add a tap animation for mobile users */
+  .product-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease-in-out;
+  }
+}

@@ -1,0 +1,236 @@
+/* Home.css - Eco-Friendly Theme */
+
+.home-container {
+  font-family: 'Arial', sans-serif;
+  color: #3b7d22;
+  background-color: #f1ede0;
+  text-align: center;
+  padding: 20px 50px;
+  overflow: hidden;
+  position: relative;
+  margin: -10px auto;
+}
+
+/* 🟢 Hero Section */
+.hero {
+  position: relative;
+  height: 55vh;
+  width: 100%;
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f1ede0;
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+/* 🟢 CTA Button */
+.cta-button {
+  background-color: #44a21e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #285918;
+  transform: scale(1.05);
+}
+
+/* 🟢 About Section */
+.about {
+  padding: 30px 50px;
+  background-color: #266210;
+  color: white;
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.about p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* 🟢 Products Section */
+.products {
+  position: relative;
+  height: 50vh;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f1ede0;
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+.product-content{
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+/* Process Section */
+.process {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0px;
+  background-color: #266210;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 1800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.process-content {
+  max-width: 500px;
+  flex: 1;
+  text-align: center;
+}
+
+.process-content h2 {
+  color: #f4f4f4;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.process-content p {
+  color: #f7f7f7;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.process-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.process-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  background-color: #98a59f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* 🟢 Why Choose Us Section */
+.why-choose-us {
+  padding: 40px;
+  text-align: center;
+}
+
+.reasons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.reason {
+  background: #e0d5b3;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  text-align: center;
+}
+
+.reason p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* 🟢 Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 40vh;
+    padding: 10px 10px 10px 10px;
+    margin-left: -10px;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about,
+  .products,
+  .process {
+    width: 90%;
+    padding: 30px;
+    margin: 20px -15px ;
+  }
+
+  .process {
+    flex-direction: column;
+  }
+
+  .process-content,
+  .product-content {
+    max-width: 90%;
+  }
+
+  .process-img {
+    max-width: 80%;
+  }
+
+  .why-choose-us {
+    padding: 20px;
+  }
+
+  .reasons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .reason {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
