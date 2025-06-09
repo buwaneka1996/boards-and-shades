@@ -60,8 +60,26 @@ const Contact = () => {
           <h2>Our Location</h2>
           <p><strong>Boards & Shades Pvt Ltd,</strong></p>
           <p><strong>Canal Road, Malabe, Sri Lanka</strong></p>
-          <p>Email: <strong>packmelankasales@gmail.com</strong></p>
-          <p>Phone: <strong>+94 77 220 9406</strong></p>
+
+          <p>
+            Email:{" "}
+            <strong>
+              <a style={{color: '#5a5a5a', textDecoration:'none'}} 
+              href="mailto:packmelankasales@gmail.com">
+                packmelankasales@gmail.com
+              </a>
+            </strong>
+          </p>
+
+          <p>
+            Phone:{" "}
+            <strong>
+              <a style={{color: '#5a5a5a', textDecoration:'none'}} 
+              href="tel:+94772209406">
+                +94 77 220 9406
+              </a>
+            </strong>
+          </p>
 
           <iframe
             title="Google Maps"

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer" style={{ cursor: 'default' }}>
       <div className="footer-container">
-        
+
         {/* Company Info */}
         <div className="footer-section">
           <h2>Boards & Shades</h2>
@@ -28,12 +28,28 @@ const Footer = () => {
         {/* Contact Details */}
         <div className="footer-section">
           <h3>Contact Us</h3>
-          <p>Email: <strong>packmelankasales@gmail.com</strong></p>
-          <p>Phone: <strong>+94 77 220 9406 </strong></p>
-          <p> <strong>Boards & Shades, Canal Road, Malabe, Sri Lanka</strong></p>
+          <p>
+            Email:{" "}
+            <strong>
+              <a href="mailto:packmelankasales@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+                packmelankasales@gmail.com
+              </a>
+            </strong>
+          </p>
+          <p>
+            Phone:{" "}
+            <strong>
+              <a href="tel:+94772209406" style={{ color: 'inherit', textDecoration: 'none' }}>
+                +94 77 220 9406 
+              </a>
+            </strong>
+          </p>
+          <p>
+            <strong>Boards & Shades Pvt Ltd, Canal Road, Malabe, Sri Lanka.</strong>
+          </p>
         </div>
 
-       {/* /* Social Media Links 
+        {/* /* Social Media Links 
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
